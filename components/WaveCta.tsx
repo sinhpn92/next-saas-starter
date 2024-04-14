@@ -25,7 +25,7 @@ export default function WaveCta() {
           <Button onClick={() => setIsModalOpened(true)}>
             Subscribe to the newsletter <span>&rarr;</span>
           </Button>
-          <NextLink href="/features" passHref legacyBehavior>
+          <NextLink href="/features" passHref>
             <OutlinedButton transparent>
               Features <span>&rarr;</span>
             </OutlinedButton>
