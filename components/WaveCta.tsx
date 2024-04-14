@@ -20,7 +20,7 @@ export default function WaveCta() {
     </svg>
     <CtaWrapper>
       <Container>
-        <Title>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</Title>
+        <Title>Come and get the latest news about software and AI!</Title>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>
             Subscribe to the newsletter <span>&rarr;</span>
