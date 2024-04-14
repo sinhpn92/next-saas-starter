@@ -768,7 +768,7 @@ export default function HeroIllustration() {
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '0px' }}>
       <img
         id="hero-image"
-        src="/saas_demo.jpg"
+        src="blitzbuild.net/saas_demo.jpg"
         alt="SaaS Demo Illustration"
         width="1113.8"
         height="425.71"
