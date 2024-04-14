@@ -14,21 +14,22 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>the coolest, saas product you have ever seen</CustomOverTitle>
-        <Heading>Make your life easier with our SaaS</Heading>
+        <CustomOverTitle>The Ultimate Low-Code Platform</CustomOverTitle>
+        <Heading>Revolutionize Your Business with Blitzbuild</Heading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
+          Blitzbuild is a game-changing low-code platform that empowers developers to create robust ERP, CRM, and
+          management systems with unparalleled ease. Our intuitive drag-and-drop interface, powerful workflow engine,
+          and seamless integration capabilities enable you to build sophisticated applications in record time.
         </Description>
         <CustomButtonGroup>
           <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
+            Get Started <span>&rarr;</span>
           </Button>
-          <NextLink href="#whitepaper" passHref>
+          {/* <NextLink href="#features" passHref>
             <Button transparent>
-              Features <span>&rarr;</span>
+              Explore Features <span>&rarr;</span>
             </Button>
-          </NextLink>
+          </NextLink> */}
         </CustomButtonGroup>
       </Contents>
       <ImageContainer>

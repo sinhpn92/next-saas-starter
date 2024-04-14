@@ -13,19 +13,22 @@ export default function Cta() {
     <CtaWrapper>
       <Container>
         <Stack>
-          <OverTitle>Lorem ipsum dolor sit amet</OverTitle>
-          <SectionTitle>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</SectionTitle>
+          <OverTitle>Revolutionize Your Business with Blitzbuild</OverTitle>
+          <SectionTitle>Explore Cutting-Edge CRM and ERP Solutions!</SectionTitle>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae accusamus deleniti nihil quas tempora numquam, vitae
-            culpa.
+            Discover the future of business technology with Blitzbuild. Each issue of our newsletter brings you the forefront of custom CRM
+            and ERP development, packed with actionable insights, success stories, and exclusive updates. Join our community to stay ahead
+            in the fast-evolving world of enterprise solutions. Subscribe now and start transforming your business operations with
+            innovative strategies that only Blitzbuild can offer!
           </Description>
+
           <ButtonGroup>
-            <NextLink href="#early-access" passHref>
+            <NextLink href="#early-access" passHref legacyBehavior>
               <Button>
                 Subscribe to the newsletter <span>&rarr;</span>
               </Button>
             </NextLink>
-            <NextLink href="#whitepaper" passHref>
+            <NextLink href="features" passHref legacyBehavior>
               <OutlinedButton transparent>
                 Features <span>&rarr;</span>
               </OutlinedButton>

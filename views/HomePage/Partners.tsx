@@ -7,13 +7,15 @@ import Container from 'components/Container';
 import { media } from 'utils/media';
 
 const PARTNER_LOGOS = [
-  'logoipsum-logo-1.svg',
-  'logoipsum-logo-2.svg',
-  'logoipsum-logo-3.svg',
-  'logoipsum-logo-4.svg',
-  'logoipsum-logo-5.svg',
-  'logoipsum-logo-6.svg',
-  'logoipsum-logo-7.svg',
+  // 'logoipsum-logo-1.svg',
+  // 'logoipsum-logo-2.svg',
+  // 'logoipsum-logo-3.svg',
+  // 'logoipsum-logo-4.svg',
+  // 'logoipsum-logo-5.svg',
+  // 'logoipsum-logo-6.svg',
+  // 'logoipsum-logo-7.svg',
+  'ceec.jpeg',
+  'corning.jpg',
 ];
 
 export default function Partners() {
@@ -45,7 +47,11 @@ export default function Partners() {
 }
 
 function normalizePartnerLogoName(logo: string) {
-  return logo.replace('.svg', '');
+  logo = logo.replace('.svg', '');
+  logo = logo.replace('.jpg', '');
+  logo = logo.replace('.png', '');
+  logo = logo.replace('.jpeg','');
+  return logo;
 }
 
 const Title = styled.h3`
