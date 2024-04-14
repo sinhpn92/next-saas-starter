@@ -32,9 +32,9 @@ export default function Hero() {
           </NextLink> */}
         </CustomButtonGroup>
       </Contents>
-      <ImageContainer>
+      {/* <ImageContainer>
         <HeroIllustration />
-      </ImageContainer>
+      </ImageContainer> */}
     </HeroWrapper>
   );
 }

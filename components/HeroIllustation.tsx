@@ -765,15 +765,15 @@ export default function HeroIllustration() {
     //   <circle cx="507.64" cy="789.47" r="36.25" fill="#1473fa" opacity="0.1" />
     //   <circle cx="990.55" cy="768.57" r="36.25" fill="#1473fa" opacity="0.1" />
     // </svg>
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '0px' }}>
-      <img
-        id="hero-image"
-        src="blitzbuild.net/saas_demo.jpg"
-        alt="SaaS Demo Illustration"
-        width="1113.8"
-        height="425.71"
-      />
-    </div>
+    // <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', paddingTop: '0px' }}>
+    //   <img
+    //     id="hero-image"
+    //     src="blitzbuild.net/saas_demo.jpg"
+    //     alt="SaaS Demo Illustration"
+    //     width="1113.8"
+    //     height="425.71"
+    //   />
+    // </div>
 
   )
 }
