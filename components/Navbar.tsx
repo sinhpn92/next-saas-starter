@@ -67,7 +67,7 @@ export default function Navbar({ items }: NavbarProps) {
   return (
     <NavbarContainer hidden={isNavbarHidden} transparent={isTransparent}>
       <Content>
-        <NextLink href="/" passHref>
+        <NextLink href="/" passHref legacyBehavior>
           <LogoWrapper>
             <Logo />
           </LogoWrapper>
@@ -77,9 +77,9 @@ export default function Navbar({ items }: NavbarProps) {
             <NavItem key={singleItem.href} {...singleItem} />
           ))}
         </NavItemList>
-        <ColorSwitcherContainer>
+        {/* <ColorSwitcherContainer>
           <ColorSwitcher />
-        </ColorSwitcherContainer>
+        </ColorSwitcherContainer> */}
         <HamburgerMenuWrapper>
           <HamburgerIcon aria-label="Toggle menu" onClick={toggle} />
         </HamburgerMenuWrapper>
@@ -102,7 +102,7 @@ function NavItem({ href, title, outlined }: SingleNavItem) {
   return (
     <NavItemWrapper outlined={outlined}>
       <NextLink href={href} passHref>
-        <a>{title}</a>
+        {title}
       </NextLink>
     </NavItemWrapper>
   );
