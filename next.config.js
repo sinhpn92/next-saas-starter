@@ -16,9 +16,6 @@ module.exports = withBundleAnalyzer({
   compiler: {
     styledComponents: true,
   },
-  nextjsColorMode: {
-    initialColorMode: 'light',
-  },
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.module.rules.push({
       test: /\.svg$/,
