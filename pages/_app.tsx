@@ -196,7 +196,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Providers>
         <Modals />
         <Navbar items={navItems} />
-        {/* <TinaEditProvider
+        <TinaEditProvider
           editMode={
             <TinaCMS
               schema={schema}
@@ -213,8 +213,8 @@ function MyApp({ Component, pageProps }: AppProps) {
            }
         >
           <Component {...pageProps} />
-        </TinaEditProvider>  */}
-        <Component {...pageProps} />
+        </TinaEditProvider> 
+        {/* <Component {...pageProps} /> */}
         <WaveCta />
         <Footer />
       </Providers>
