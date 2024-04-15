@@ -163,7 +163,6 @@ const schema = defineSchema({
   ],
 });
 
-
 const navItems: NavItems = [
   // { title: 'Awesome SaaS Features', href: '/features' },
   { title: 'Pricing', href: '/pricing' },
@@ -194,7 +193,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyle />
 
       <Providers>
-        <Modals />
+        {/* <Modals />
         <Navbar items={navItems} />
         <TinaEditProvider
           editMode={
@@ -214,7 +213,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         >
           <Component {...pageProps} />
         </TinaEditProvider> 
-        {/* <Component {...pageProps} /> */}
+        <Component {...pageProps} />
+        <WaveCta />
+        <Footer /> */}
+        <Modals />
+        <Navbar items={navItems} />
+        <Component {...pageProps} />
         <WaveCta />
         <Footer />
       </Providers>

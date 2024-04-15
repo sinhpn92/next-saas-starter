@@ -1,5 +1,4 @@
-fragment PostParts on Post {
-  __typename
+fragment PostsParts on Posts {
   title
   body
 }

@@ -1,5 +1,5 @@
-query post($relativePath: String!) {
-  post(relativePath: $relativePath) {
+query posts($relativePath: String!) {
+  posts(relativePath: $relativePath) {
     ... on Document {
       _sys {
         filename
@@ -11,28 +11,20 @@ query post($relativePath: String!) {
       }
       id
     }
-    ...PostParts
+    ...PostsParts
   }
 }
 
-query postConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String, $filter: PostFilter) {
-  postConnection(
+query postsConnection($before: String, $after: String, $first: Float, $last: Float, $sort: String) {
+  postsConnection(
     before: $before
     after: $after
     first: $first
     last: $last
     sort: $sort
-    filter: $filter
   ) {
-    pageInfo {
-      hasPreviousPage
-      hasNextPage
-      startCursor
-      endCursor
-    }
     totalCount
     edges {
-      cursor
       node {
         ... on Document {
           _sys {
@@ -45,7 +37,7 @@ query postConnection($before: String, $after: String, $first: Float, $last: Floa
           }
           id
         }
-        ...PostParts
+        ...PostsParts
       }
     }
   }
