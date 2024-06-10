@@ -130,9 +130,9 @@ const HamburgerMenuWrapper = styled.div`
 
 const LogoWrapper = styled.a`
   display: flex;
+  align-items: center;
   margin-right: auto;
   text-decoration: none;
-
   color: rgb(var(--logoColor));
 `;
 

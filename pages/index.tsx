@@ -35,7 +35,8 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
             <p>
               Blitzbuild revolutionizes the way you build and manage business applications. Our intuitive low-code platform enables
               developers to effortlessly create powerful ERP, CRM, and other management systems tailored to the unique needs of enterprises
-              and SMBs. <Link href="/features">Discover the power of Blitzbuild today.</Link>
+              and SMBs. 
+              {/* <Link href="/features">Discover the power of Blitzbuild today.</Link> */}
             </p>
           </BasicSection>
           <BasicSection
@@ -56,13 +57,13 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
             </ul>
           </BasicSection>
         </WhiteBackgroundContainer>
-        <DarkerBackgroundContainer>
-          <Cta />
+        {/* <DarkerBackgroundContainer> */}
+          {/* <Cta /> */}
           {/* <FeaturesGallery /> */}
           {/* <Features /> */}
           {/* <Testimonials /> */}
           {/* <ScrollableBlogPosts posts={posts} /> */}
-        </DarkerBackgroundContainer>
+        {/* </DarkerBackgroundContainer> */}
       </HomepageWrapper>
     </>
   );
