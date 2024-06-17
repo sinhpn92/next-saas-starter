@@ -10,7 +10,7 @@ export default function PricingTablesSection() {
       <SectionTitle>Flexible pricing for agile teams</SectionTitle>
       <AutofitGrid>
         <PricingCard
-          title="free"
+          title="Free"
           description="Give us a try for free"
           benefits={['1 seat', '1 active project', 'Ulimited viewers', '10 blocks']}
         >

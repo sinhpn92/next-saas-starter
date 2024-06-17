@@ -77,9 +77,9 @@ export default function Navbar({ items }: NavbarProps) {
             <NavItem key={singleItem.href} {...singleItem} />
           ))}
         </NavItemList>
-        <ColorSwitcherContainer>
+        {/* <ColorSwitcherContainer>
           <ColorSwitcher />
-        </ColorSwitcherContainer>
+        </ColorSwitcherContainer> */}
         <HamburgerMenuWrapper>
           <HamburgerIcon aria-label="Toggle menu" onClick={toggle} />
         </HamburgerMenuWrapper>
@@ -102,7 +102,7 @@ function NavItem({ href, title, outlined }: SingleNavItem) {
   return (
     <NavItemWrapper outlined={outlined}>
       <NextLink href={href} passHref>
-        <a>{title}</a>
+        {title}
       </NextLink>
     </NavItemWrapper>
   );
@@ -130,9 +130,9 @@ const HamburgerMenuWrapper = styled.div`
 
 const LogoWrapper = styled.a`
   display: flex;
+  align-items: center;
   margin-right: auto;
   text-decoration: none;
-
   color: rgb(var(--logoColor));
 `;
 

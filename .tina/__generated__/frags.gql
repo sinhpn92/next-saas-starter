@@ -1,8 +1,4 @@
 fragment PostsParts on Posts {
   title
-  description
-  date
-  tags
-  imageUrl
   body
 }

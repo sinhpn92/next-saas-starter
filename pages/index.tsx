@@ -20,41 +20,50 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <title>{EnvVars.SITE_NAME}</title>
         <meta
           name="description"
-          content="Tempor nostrud velit fugiat nostrud duis incididunt Lorem deserunt est tempor aute dolor ad elit."
+          content="Blitzbuild is a powerful low-code platform with a robust workflow engine, empowering developers to effortlessly create ERP, CRM, and other management systems for enterprises and SMBs."
         />
       </Head>
       <HomepageWrapper>
         <WhiteBackgroundContainer>
           <Hero />
           <Partners />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
+          <BasicSection
+            imageUrl="/SaaS-challenge-2-transformed.png"
+            title="Streamline Your Business Processes with Blitzbuild"
+            overTitle="Intuitive Workflow Management"
+          >
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore
-              voluptate quo deleniti animi laboriosam.{' '}
-              <Link href="/help-center">Possimus ullam velit rem itaque consectetur, in distinctio?</Link> Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Soluta repellendus quia quos obcaecati nihil. Laudantium non accusantium, voluptate eum nesciunt
-              at suscipit quis est soluta?
+              Blitzbuild revolutionizes the way you build and manage business applications. Our intuitive low-code platform enables
+              developers to effortlessly create powerful ERP, CRM, and other management systems tailored to the unique needs of enterprises
+              and SMBs. 
+              {/* <Link href="/features">Discover the power of Blitzbuild today.</Link> */}
             </p>
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-2.svg" title="Lorem ipsum dolor sit." overTitle="lorem ipsum" reversed>
+          <BasicSection
+            imageUrl="/SaaS-challenge-1-transformed.png"
+            title="Unleash Your Productivity with Blitzbuild"
+            overTitle="Low-Code Development"
+            reversed
+          >
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore{' '}
-              <strong>voluptate quo deleniti animi laboriosam</strong>. Possimus ullam velit rem itaque consectetur, in distinctio?
+              With Blitzbuild, you can rapidly develop and deploy sophisticated business applications without the complexity of traditional
+              coding. Our drag-and-drop interface and pre-built components <strong>accelerate your development process</strong>, allowing
+              you to focus on delivering value to your organization.
             </p>
             <ul>
-              <li>Professional point 1</li>
-              <li>Professional remark 2</li>
-              <li>Professional feature 3</li>
+              <li>Intuitive visual development environment</li>
+              <li>Seamless integration with existing systems</li>
+              <li>Robust security and scalability features</li>
             </ul>
           </BasicSection>
         </WhiteBackgroundContainer>
-        <DarkerBackgroundContainer>
-          <Cta />
-          <FeaturesGallery />
-          <Features />
-          <Testimonials />
-          <ScrollableBlogPosts posts={posts} />
-        </DarkerBackgroundContainer>
+        {/* <DarkerBackgroundContainer> */}
+          {/* <Cta /> */}
+          {/* <FeaturesGallery /> */}
+          {/* <Features /> */}
+          {/* <Testimonials /> */}
+          {/* <ScrollableBlogPosts posts={posts} /> */}
+        {/* </DarkerBackgroundContainer> */}
       </HomepageWrapper>
     </>
   );

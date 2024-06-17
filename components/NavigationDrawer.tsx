@@ -49,10 +49,10 @@ function NavItemsList({ items }: NavigationDrawerProps) {
           <NavItem key={idx}>
             <NextLink href={singleItem.href}>{singleItem.title}</NextLink>
           </NavItem>
-        )
+        );
       })}
     </ul>
-  )
+  );
 }
 
 function DrawerCloseButton() {
